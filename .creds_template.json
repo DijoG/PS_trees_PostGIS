@@ -1,0 +1,14 @@
+{
+    "proofsafe": {
+        "base_url": "yourPSbaseurl",
+        "username": "yourPSusername",
+        "password": "yourPSpassword"
+    },
+    "database": {
+        "host": "yourDBhost",
+        "port": 5432,
+        "database": "yourDBname",
+        "user": "yourDBusername",
+        "password": "yourpassword"
+    }
+}
