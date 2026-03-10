@@ -104,6 +104,7 @@ from proofsafe_trees_postgis import ProofSafeGeoDB
 from datetime import datetime
 
 api = ProofSafeGeoDB()
+
 api.fetch_and_store(
     table_name=f"trees_{datetime.now().strftime('%Y%m%d_%H%M%S')}",
     if_exists='replace',
