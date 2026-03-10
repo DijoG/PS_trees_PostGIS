@@ -65,7 +65,7 @@ records_fetched, records_stored = api.fetch_and_store(
 )
 print(f"Stored {records_stored} trees")
 ```
-Run it:
+Run it in CLI:
 ```bash
 python import_trees.py
 # or:
