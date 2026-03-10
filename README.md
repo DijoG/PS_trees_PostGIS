@@ -148,16 +148,16 @@ psql -h localhost -U postgres -d trees_db
 \dt trees_*
 
 -- Count trees in latest import
-SELECT COUNT(*) FROM trees_20240315_143022;
+SELECT COUNT(*) FROM trees_20260310_155536;
 
 -- Find trees by species
 SELECT asset_id, species, health 
-FROM trees_20240315_143022 
+FROM trees_20260310_155536 
 WHERE species LIKE '%Oak%';
 
 -- Spatial query: trees within 1km of a point
 SELECT asset_id, species, ST_AsText(geom)
-FROM trees_20240315_143022
+FROM trees_20260310_155536
 WHERE ST_DWithin(
     geom::geography,
     ST_SetSRID(ST_MakePoint(46.63, 24.69), 4326)::geography,
