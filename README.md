@@ -66,6 +66,28 @@ records_fetched, records_stored = api.fetch_and_store(
 )
 print(f"Stored {records_stored} trees")
 ```
+Or use example/`fetch_and_store.py`:
+```python
+from proofsafe_trees_postgis import ProofSafeGeoDB
+from datetime import datetime
+
+# Generate timestamp for teble name
+timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+
+# Initialize the API client
+# It will automatically load credentials from .creds.json
+api = ProofSafeGeoDB()
+
+# ============================================
+# Fetch tree data and store in database 
+# ============================================
+api.fetch_and_store(
+    table_name=f"trees_{timestamp}",     
+    if_exists='replace',                 # 'replace'-clean replacement!,  'append'-duplicates! or 'fail'
+    debug=True
+)
+```
+
 Run it in CLI:
 ```bash
 python import_trees.py
