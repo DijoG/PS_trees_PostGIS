@@ -170,7 +170,7 @@ print(trees)
 After import, you can query your data:
 ```sql
 -- Connect to your database
-psql -h localhost -U postgres -d trees_db
+psql -h localhost -U postgres -d yourDBname
 
 -- List all trees tables
 \dt trees_*
