@@ -46,7 +46,7 @@ Edit `creds.json` with your credentials:
 }
 ```
 
-## Quick Start
+## General Usage 
 
 ### Python Script
 
@@ -118,7 +118,6 @@ python proofsafe_trees_postgis.py --import-history
 # Show database statistics
 python proofsafe_trees_postgis.py --stats
 ```
-
 ## Usage Examples
 
 ### Example 1: Basic Import
