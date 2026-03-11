@@ -24,7 +24,7 @@ pip install -r requirements.txt
 ```
 
 ### 3. Configure credentials
-Copy and create `.creds.json`:
+Create `.creds.json`:
 ```bash
 cp .creds_template.json .creds.json
 ```
