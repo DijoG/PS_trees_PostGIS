@@ -50,23 +50,9 @@ Edit `creds.json` with your credentials:
 
 ### Python Script
 
-Create a file `import_trees.py` or use example/`fetch_and_store.py`:
-```python
-from proofsafe_trees_postgis import ProofSafeGeoDB
-from datetime import datetime
+#### Option 1
 
-# Initialize (auto-loads credentials)
-api = ProofSafeGeoDB()
-
-# Store in database with timestamped table
-records_fetched, records_stored = api.fetch_and_store(
-    table_name=f"trees_{datetime.now().strftime('%Y%m%d_%H%M%S')}",
-    if_exists='replace',
-    debug=True
-)
-print(f"Stored {records_stored} trees")
-```
-Or use example/`fetch_and_store.py`:
+Use example/`fetch_and_store.py`:
 ```python
 from proofsafe_trees_postgis import ProofSafeGeoDB
 from datetime import datetime
@@ -87,8 +73,26 @@ api.fetch_and_store(
     debug=True
 )
 ```
+#### Option 2 
 
-Run it in CLI:
+Create a file `import_trees.py`:
+```python
+from proofsafe_trees_postgis import ProofSafeGeoDB
+from datetime import datetime
+
+# Initialize (auto-loads credentials)
+api = ProofSafeGeoDB()
+
+# Store in database with timestamped table
+records_fetched, records_stored = api.fetch_and_store(
+    table_name=f"trees_{datetime.now().strftime('%Y%m%d_%H%M%S')}",
+    if_exists='replace',
+    debug=True
+)
+print(f"Stored {records_stored} trees")
+```
+
+Run in CLI:
 ```bash
 python import_trees.py
 # or:
