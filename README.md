@@ -1,6 +1,6 @@
 # PS Trees PostGIS
 
-A Python tool to extract tree data from ProofSafe API and store it in PostGIS database with spatial capabilities.
+A Python tool to extract tree data from ProofSafe API (database) and store it in PostGIS database with spatial capabilities.
 
 ## Features
 - Extract all trees from ProofSafe API with pagination
@@ -24,6 +24,7 @@ pip install -r requirements.txt
 ```
 
 ### 3. Configure credentials
+Copy and create `.creds.json`
 ```bash
 cp .creds_template.json .creds.json
 ```
