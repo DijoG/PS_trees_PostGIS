@@ -73,6 +73,10 @@ api.fetch_and_store(
     debug=True
 )
 ```
+Run in CLI:
+```bash
+python example/fetch_and_store.py
+```
 #### Option 2 
 
 Create a file `import_trees.py`:
@@ -95,8 +99,6 @@ print(f"Stored {records_stored} trees")
 Run in CLI:
 ```bash
 python import_trees.py
-# or:
-python example/fetch_and_store.py
 ```
 
 ### Command Line Interface
