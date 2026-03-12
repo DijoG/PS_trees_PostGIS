@@ -53,7 +53,7 @@ The `schema` parameter tells the script which PostgreSQL schema to use for table
 # Use the default 'public' schema
 api = ProofSafeGeoDB()  # schema defaults to 'public'
 
-# Use a custom schema (e.g., 'sde', 'gisdata', 'trees', etc.)
+# Use a custom schema (e.g., 'sde', 'tree_survey')
 api = ProofSafeGeoDB(schema='sde')
 
 # Any valid PostgreSQL schema name works
