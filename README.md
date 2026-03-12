@@ -162,10 +162,10 @@ import pandas as pd
 # schema = 'TreeSurvey'  # for Treesurvey schema
 # schema = 'Project_x'   # for project-specific schema
 
-schema = 'sde'  # <-- Change this to your desired schema
+my_schema = 'sde'  # <-- Change this to your desired schema
 
 # Connect to database with sde schema
-api = ProofSafeGeoDB(schema='sde')
+api = ProofSafeGeoDB(schema=my_schema)
 
 # 1. Show recent imports
 print("\n📋 RECENT IMPORTS")
