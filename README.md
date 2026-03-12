@@ -77,7 +77,7 @@ api = ProofSafeGeoDB(schema='sde')
 # Fetch tree data and store in database 
 api.fetch_and_store(
     table_name=f"trees_{timestamp}",    
-    if_exists='replace',               # 'replace'-clean replacement!,  'append'-duplicates! or 'fail'
+    if_exists='replace',             # 'replace'-clean replacement!, 'append'-duplicates! or 'fail'
     debug=True
 )
 ```
