@@ -96,7 +96,7 @@ api = ProofSafeGeoDB(schema='TreeSurvey')
 # Store in database with timestamped table
 records_fetched, records_stored = api.fetch_and_store(
     table_name=f"trees_{datetime.now().strftime('%Y%m%d_%H%M%S')}",
-    if_exists='replace',  # 'replace', 'append', or 'fail'
+    if_exists='replace',  
     debug=True
 )
 
@@ -110,7 +110,7 @@ from proofsafe_trees_postgis_schema import ProofSafeGeoDB
 from datetime import datetime
 
 # Example 1: Store in default 'public' schema
-api_public = ProofSafeGeoDB()  # schema='public' by default
+api_public = ProofSafeGeoDB()  
 api_public.fetch_and_store(
     table_name="trees_public",
     if_exists='replace',
@@ -142,11 +142,11 @@ api = ProofSafeGeoDB(schema='sde')
 # Import only healthy trees from specific projects
 records_fetched, records_stored = api.fetch_and_store(
     table_name="healthy_trees_2024",
-    project_ids=[123, 456],        # Specific projects
+    project_ids=[123, 456],         # Specific projects
     health="good",                  # Only healthy trees
     start_date="2024-01-01",        # Date range
     end_date="2024-12-31",
-    include_events=True,             # Include comments/events
+    include_events=True,            # Include comments/events
     if_exists='replace',
     debug=True
 )
