@@ -6,7 +6,7 @@ Direct fetch and store
 from proofsafe_trees_postgis_schema import ProofSafeGeoDB
 from datetime import datetime
 
-# Generate timestamp for teble name
+# Generate timestamp for table name
 timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
 
 # Initialize the API client
