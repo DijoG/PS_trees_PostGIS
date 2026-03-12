@@ -208,6 +208,6 @@ python proofsafe_trees_postgis_schema.py --db-schema sde --import-history
 
 ## Requirements
 
-- Python 3.7+
+- Python 3.8+
 - PostgreSQL 12+ with PostGIS
 - See `requirements.txt` for Python packages
