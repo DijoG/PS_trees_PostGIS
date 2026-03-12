@@ -57,7 +57,7 @@ api = ProofSafeGeoDB()  # schema defaults to 'public'
 api = ProofSafeGeoDB(schema='sde')
 
 # Any valid PostgreSQL schema name works
-api = ProofSafeGeoDB(schema='tree_survey')
+api = ProofSafeGeoDB(schema='TreeSurvey')
 ```
 ## Quick Start
 
@@ -157,7 +157,6 @@ from proofsafe_trees_postgis_schema import ProofSafeGeoDB
 import pandas as pd
 
 # CHANGE THIS LINE to use different schemas:
-# schema = 'public'      # default
 # schema = 'sde'         # for sde schema
 # schema = 'TreeSurvey'  # for Treesurvey schema
 # schema = 'Project_x'   # for project-specific schema
