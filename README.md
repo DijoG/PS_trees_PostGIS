@@ -61,6 +61,11 @@ api = ProofSafeGeoDB(schema='tree_survey')
 ```
 ## Quick Start
 
+### For Green Riyadh TMO
+Run in CLI:
+```bash
+python example/fetch_and_store.py
+```
 ### Basic Import
 ```python
 from proofsafe_trees_postgis_schema import ProofSafeGeoDB
@@ -77,11 +82,6 @@ records_fetched, records_stored = api.fetch_and_store(
 )
 
 print(f"✅ Stored {records_stored} trees")
-```
-#### For Green Riyadh TMO
-Run in CLI:
-```bash
-python example/fetch_and_store.py
 ```
 ## Usage Examples
 
