@@ -107,7 +107,6 @@ print(f"✅ Stored {records_stored} trees")
 ### 1. Extract Data to Different Schemas
 ```python
 from proofsafe_trees_postgis_schema import ProofSafeGeoDB
-from datetime import datetime
 
 # Example 1: Store in default 'public' schema
 api_public = ProofSafeGeoDB()  
